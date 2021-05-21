@@ -10,6 +10,9 @@ The date and prcp values of the query results were selected and loaded into a Pa
 The results were sorted by date and plotted using plot method
 A summary statistics for the precipitation data was displayed using Pandas
 
+![image](https://user-images.githubusercontent.com/79940751/119182642-2d43f100-ba41-11eb-947c-f44ec56b6cb3.png)
+
+
 
 ## Station Analysis
 A query was designed to calculate the total number of stations in Hawaii
