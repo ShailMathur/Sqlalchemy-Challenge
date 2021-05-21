@@ -19,6 +19,9 @@ A query was designed to calculate the total number of stations in Hawaii
 The query finds the most active stations using functions as func.min, func.max, func.avg, and func.count
 Another query was designed to retrieve the last 12 months of temperature observation data (TOBS), which were later filtered by the station with the highest number of observations and plotted as a histogram with bins=12
 
+![image](https://user-images.githubusercontent.com/79940751/119182711-46e53880-ba41-11eb-8db2-c7ff36fa33da.png)
+
+
 
 ## Climate App
 A Flask API was designed based on the queries from above and Flask jsonify was used to convert API data into a valid JSON response object. Routes were created as follows:
