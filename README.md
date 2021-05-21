@@ -24,30 +24,43 @@ Another query was designed to retrieve the last 12 months of temperature observa
 
 
 ## Climate App
-A Flask API was designed based on the queries from above and Flask jsonify was used to convert API data into a valid JSON response object. Routes were created as follows:
+A Flask API was designed based on the queries from above and Flask jsonify was used to convert API data into a valid JSON response object.
+
+Routes were created as follows:
 
 /
 Home page
 List all routes that are available
+
+
 /api/v1.0/precipitation
 Convert the query results to a dictionary using date as the key and prcp as the value
 Return the JSON representation of your dictionary
+
+
 /api/v1.0/stations
 Return a JSON list of stations from the dataset
+
+
 /api/v1.0/tobs
 Query the dates and temperature observations of the most active station for the last year of data
 Return a JSON list of temperature observations (TOBS) for the previous year
+
+
 /api/v1.0/<start> and /api/v1.0/<start>/<end>
 Return a JSON list of the minimum temperature, the average temperature, and the max temperature for a given start or start-end range
 When given the start only, calculate TMIN, TAVG, and TMAX for all dates greater than and equal to the start date
 When given the start and the end date, calculate the TMIN, TAVG, and TMAX for dates between the start and end date inclusive
-BONUS: Other Analyses
-Temperature Analysis I
+ 
+ 
+## BONUS: Other Analyses
+ 
+# Temperature Analysis I
 Hawaii is reputed to enjoy mild weather all year. Is there a meaningful difference between the temperature in, for example, June and December? Here the SQLAlchemy was used to identify the average temperature in June at all stations across all available years in the dataset. Same method was applied to December temperature.
 
 The unpaired t-test was used because it's comparing the means of two independent samples (Jun vs. Dec). Based on the t-test result, the difference in the means of Jun vs Dec was statistically significant.
 
-Temperature Analysis II
+# Temperature Analysis II
 The function calc_temps was used to calculate the min, avg, and max temperature for my trip (2017-03-01 to 2017-03-10) from the previous year (2016-03-01 to 2016-03-10). A bar chart was created using the average temperature as the height and the peak-to-peak (TMAX-TMIN) value as the y error bar (YERR).
 
 
