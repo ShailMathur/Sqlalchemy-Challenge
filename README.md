@@ -17,7 +17,7 @@ The query finds the most active stations using functions as func.min, func.max, 
 Another query was designed to retrieve the last 12 months of temperature observation data (TOBS), which were later filtered by the station with the highest number of observations and plotted as a histogram with bins=12
 
 
-Climate App
+## Climate App
 A Flask API was designed based on the queries from above and Flask jsonify was used to convert API data into a valid JSON response object. Routes were created as follows:
 
 /
@@ -46,12 +46,12 @@ The function calc_temps was used to calculate the min, avg, and max temperature 
 
 
 
-Daily Rainfall Average
+## Daily Rainfall Average
 The rainfall per weather station was calculated using the previous year's matching dates. The daily normals of my trip (2017-03-01 to 2017-03-10), including the average of the min, avg, and max temperatures, were also calculated by the daily_normals function. In the end, an area plot (stacked=False) was created for the daily normal during my trip.
 
 
 
-List of Content
+## List of Content
 climate_analysis.ipynb: a Jupyter Notebook of Climate Analysis and Exploration + Bonus Questions
 app.py: a Python file of Climate App
 Resources: a folder containing hawaii_measurements.csv, hawaii_stations.csv and hawaii.sqlite
